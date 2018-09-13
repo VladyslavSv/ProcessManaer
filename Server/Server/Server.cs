@@ -74,8 +74,10 @@ namespace Server
         }
         private void removeProcess(string taskName)
         {
-            Process process = Process.GetProcessesByName(taskName).First();
-            process.Close();
+            Process process = Process.GetProcessesByName(taskName).First();   
+
+            process.Kill();
+            process.CloseMainWindow();
         }
         private void sendAnswer()
         {

@@ -27,3 +27,12 @@ C:\Users\Skly_sz20\Desktop\Homework\RemoteTaskManager\obj\Debug\RemoteTaskManage
 C:\Users\Skly_sz20\Desktop\Homework\RemoteTaskManager\obj\Debug\RemoteTaskManager.csproj.CoreCompileInputs.cache
 C:\Users\Skly_sz20\Desktop\Homework\RemoteTaskManager\obj\Debug\RemoteTaskManager.exe
 C:\Users\Skly_sz20\Desktop\Homework\RemoteTaskManager\obj\Debug\RemoteTaskManager.pdb
+C:\Users\Skly_sz20\Desktop\ProcessManaer\Client\RemoteTaskManager\bin\Debug\RemoteTaskManager.exe.config
+C:\Users\Skly_sz20\Desktop\ProcessManaer\Client\RemoteTaskManager\bin\Debug\RemoteTaskManager.exe
+C:\Users\Skly_sz20\Desktop\ProcessManaer\Client\RemoteTaskManager\bin\Debug\RemoteTaskManager.pdb
+C:\Users\Skly_sz20\Desktop\ProcessManaer\Client\RemoteTaskManager\obj\Debug\RemoteTaskManager.csprojResolveAssemblyReference.cache
+C:\Users\Skly_sz20\Desktop\ProcessManaer\Client\RemoteTaskManager\obj\Debug\RemoteTaskManager.Form1.resources
+C:\Users\Skly_sz20\Desktop\ProcessManaer\Client\RemoteTaskManager\obj\Debug\RemoteTaskManager.Properties.Resources.resources
+C:\Users\Skly_sz20\Desktop\ProcessManaer\Client\RemoteTaskManager\obj\Debug\RemoteTaskManager.csproj.GenerateResource.Cache
+C:\Users\Skly_sz20\Desktop\ProcessManaer\Client\RemoteTaskManager\obj\Debug\RemoteTaskManager.exe
+C:\Users\Skly_sz20\Desktop\ProcessManaer\Client\RemoteTaskManager\obj\Debug\RemoteTaskManager.pdb

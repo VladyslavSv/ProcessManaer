@@ -13,18 +13,40 @@ namespace RemoteTaskManager
 {
     public partial class Form1 : Form
     {
-        Client client;
+        private Client client;
 
         public Form1()
         {
             InitializeComponent();
+
+            listView1.View = View.Details;
+            listView1.Columns.Add("File name", 100, HorizontalAlignment.Left);
         }
 
-        public Form1(Client client)
+        public Form1(Client client) : this()
         {
-            InitializeComponent();
+            this.client = client;
 
             client.connect();
+            refreshListView();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            refreshListView();
+        }
+        private void button2_Click(object sender, EventArgs e)
+        {
+            client.removeRemoteProcess( "chrome" );
+        }
+        private void button1_Click(object sender, EventArgs e)
+        {
+            client.createRemoteTask( @"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" );
+        }
+        private void refreshListView()
+        {
+            listView1.Items.Clear();
+
             string[] processes = client.getAllRemoteTasks();
 
             foreach (string process in processes)
@@ -33,15 +55,5 @@ namespace RemoteTaskManager
             }
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            client = new Client();
-            client.connect();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            client.createRemoteTask( @"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" );
-        }
     }
 }
