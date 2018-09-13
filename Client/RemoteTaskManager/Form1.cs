@@ -37,7 +37,8 @@ namespace RemoteTaskManager
         }
         private void button2_Click(object sender, EventArgs e)
         {
-            client.removeRemoteProcess( "chrome" );
+            client.removeRemoteProcess(listView1.SelectedItems[0].Text);
+            refreshListView();
         }
         private void button1_Click(object sender, EventArgs e)
         {
