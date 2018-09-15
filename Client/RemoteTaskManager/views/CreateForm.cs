@@ -7,14 +7,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using RemoteTaskManager.interfaces;
 namespace RemoteTaskManager
 {
-    public partial class CreateForm : Form
+    public partial class CreateForm : Form, IViewCreateForm
     {
+        public event EventHandler createForm;
+        public event EventHandler closeForm;
+
         public CreateForm()
         {
             InitializeComponent();
+
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
         }
 
         public string path
@@ -31,12 +36,12 @@ namespace RemoteTaskManager
 
         private void createButton_Click(object sender, EventArgs e)
         {
-            this.Close();
+            createForm.Invoke(sender, e);
         }
 
         private void undoButton_Click(object sender, EventArgs e)
         {
-            this.Close();
+            closeForm.Invoke(sender, e);
         }
     }
 }
