@@ -11,11 +11,11 @@ using System.Diagnostics;
 
 namespace RemoteTaskManager
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
         private Client client;
 
-        public Form1()
+        public MainForm()
         {
             InitializeComponent();
 
@@ -23,7 +23,7 @@ namespace RemoteTaskManager
             listView1.Columns.Add("File name", 100, HorizontalAlignment.Left);
         }
 
-        public Form1(Client client) : this()
+        public MainForm(Client client) : this()
         {
             this.client = client;
 
@@ -42,7 +42,16 @@ namespace RemoteTaskManager
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            client.createRemoteTask( @"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" );
+            CreateForm createForm = new CreateForm();
+
+            createForm.ShowDialog();
+
+            if (createForm.path != "")
+            {
+                client.createRemoteTask(createForm.path);
+            }
+
+            //client.createRemoteTask( @"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" );
         }
         private void refreshListView()
         {

@@ -15,7 +15,7 @@ namespace RemoteTaskManager
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1(client));
+            Application.Run(new MainForm(client));
         }
     }
 }

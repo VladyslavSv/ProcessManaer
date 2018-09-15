@@ -118,7 +118,6 @@ namespace RemoteTaskManager
 
             // соединяем сокет с удаленной конечной точкой
             socket.Connect(ipEndPoint);
-            MessageBox.Show("Connected to server");
         }
     }
 }

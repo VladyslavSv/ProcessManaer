@@ -11,3 +11,9 @@ C:\Users\Skly_sz20\Desktop\ProcessManaer\Server\Server\bin\Debug\Server.pdb
 C:\Users\Skly_sz20\Desktop\ProcessManaer\Server\Server\obj\Debug\Server.csprojResolveAssemblyReference.cache
 C:\Users\Skly_sz20\Desktop\ProcessManaer\Server\Server\obj\Debug\Server.exe
 C:\Users\Skly_sz20\Desktop\ProcessManaer\Server\Server\obj\Debug\Server.pdb
+C:\Users\sklua\Desktop\ProcessManaer\Server\Server\bin\Debug\Server.exe.config
+C:\Users\sklua\Desktop\ProcessManaer\Server\Server\bin\Debug\Server.exe
+C:\Users\sklua\Desktop\ProcessManaer\Server\Server\bin\Debug\Server.pdb
+C:\Users\sklua\Desktop\ProcessManaer\Server\Server\obj\Debug\Server.csprojResolveAssemblyReference.cache
+C:\Users\sklua\Desktop\ProcessManaer\Server\Server\obj\Debug\Server.exe
+C:\Users\sklua\Desktop\ProcessManaer\Server\Server\obj\Debug\Server.pdb
